@@ -1,0 +1,13 @@
+2
+P006
+Setrika
+Setrika anti panas
+200000
+Sowank
+STR-P
+20
+Zimbabwe
+API435
+INV006
+1
+3
