@@ -113,6 +113,6 @@ Dokumentasi di atas berisi data-data hardcode yang ditampilkan dalam bentuk tabe
 
 Dokumentasi di atas berisi form untuk input data
 
-*Notes: Ketika input data, setalah data diinput, gambar masuk ke dalam direktori lokal, akan tetapi karena memang tidak             menggunakan database, data tidak bisa dimasukkan langsung. 
+*Notes: Ketika input data, setalah data diinput, gambar masuk ke dalam direktori lokal, akan tetapi karena memang tidak menggunakan database, data tidak bisa dimasukkan langsung. 
 
-=================================== CUKUP SEKIAN DAN TERIMA KASIH =============================================
+=============================== CUKUP SEKIAN DAN TERIMA KASIH =====================================
