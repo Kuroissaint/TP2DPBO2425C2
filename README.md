@@ -1,36 +1,70 @@
 =============================JANJI============================
 
-Saya dengan nama Nafis Asyakir Anjar dan Nim 2407915 mengerjakan tugas praktikum 1 dalam mata kuliah Desain dan Pemrograman Berorientasi Objek untuk keberkahan-Nya maka saya tidak akan melakukan kecurangan seperti yang telah di spesifikasikan Aamiin.
+Saya dengan nama Nafis Asyakir Anjar dan Nim 2407915 mengerjakan tugas praktikum 2 dalam mata kuliah Desain dan Pemrograman Berorientasi Objek untuk keberkahan-Nya maka saya tidak akan melakukan kecurangan seperti yang telah di spesifikasikan Aamiin.
 
 
 =============================DESAIN===========================
 
 <img width="515" height="728" alt="image" src="https://github.com/user-attachments/assets/4f375680-1050-41c5-88b3-d8f4f93166d5" />
 
-Saya membuat kelas produk elektronik sesuai dengan tema tugas yang diberikan yaitu toko elektronik. Kelas ini memiliki 6 atribut yang menurut saya penting untuk dimiliki yaitu:
-1. Kode             (Untuk memastikan setiap produk unik)
-2. nama_produk      (setiap produk pasti memiliki atribut nama)
-3. merek            (setiap produk pasti berasal dari merek tertentu)
-4. watt             (produk elektronik pasti menggunakan watt)
-5. harga            (sebuah produk yang dijual pasti memiliki harga)
-6. deskripsi        (deskripsi produk adalah wajib)
+Di sini saya melakukan ekspansi terhadap class yang sebelumnya dibuat (Produk Elektronik) menjadi tiga kelas agar menjadi multilevel inheritence
 
+1. Produk
+   Di sini saya menjadikan Produk sebagai Base Class, asumsi saya jika suatu saat toko elektronik tersebut akan melakukan ekspansi ke bidang lain maka akan mempermudah untuk menambahkan kelas anak untuk bidang lain.
+   Atribut :
+   Id        --> Setiap produk pasti memiliki kode unik yang memudahkan sistem untuk membedakannya
+   Nama      --> Setiap produk pasti memiliki nama
+   Deskrpisi --> Setiap produk tentu memiliki deskripsi untuk menjelaskan produk tersebut
+   Harga     --> Produk jual beli pastinya memiliki harga
+
+   Method : -
+
+3. Produk Elektronik
+   Berdasarkan tema yang diberikan maka produk yang dijual akan dikhususkan untuk Produk Elektronik sebagai Intermediate Class.
+   Atribut :
+   Tegangan/Watt  --> Barang elektronik sudah pasti menggunakan listrik
+   Merek          --> Produk Elektronik pasti memiliki merek tertentu, ada kemungkinan atribut ini bisa dipindah ke class                          Produk
+   Model          --> Dalam dunia barang elektronik, setiap jenis dari merek yang sama biasanya memiliki model-model                               tertentu maka dari itu saya membuat atribut ini
+   Jenis          --> Jenis dari Produk Elektroniknya
+
+   Method : -
+
+5. Produk Impor
+   Dalam narasi otak saya, saya memodelkan toko elektronik di sini hanya menjual produk-produk impor, maka dari itu saya membuatnya menjadi derived class. Hal ini juga membuka kemungkinan toko tersebut jika ingin mulai menjual produk lokal.
+   Atribut :
+   Negara      --> Negara asal produk tersebut
+   Nomor API   --> Setiap produk impor harus memiliki nomor API (Angka pengenal Importir)
+   Invoice     --> Barang impor harus memiliki Commercial Invoice, dokumen resmi yang diterbitkan oleh eksportir kepada                         importir
+
+   Method :
+
+   - Tampilkan data (Dalam bentuk tabel)
+   - Add data 
 
 ============================FLOW CODE==========================
 
 ============GENERAL=============
 
-Secara umum, kode program ini dalam setiap bahasa memiliki struktur yang mirip. Yakni terdiri dari 2 file, satu untuk class dan satu untuk main.
+Dalam setiap bahasa, alur dari kode-nya kurang lebih sama
 
-File class berisi deklarasi kelas beserta atributnya dan method untuk "menampilkan" produk yang sudah terdata. Selain itu di file ini juga terdapat constructor, getter, dan setter.
-File main (Index.php untuk php) berisi metode penyimpanan data, fungsi untuk searching, dan menu CRUD.
+- file bernama "Produk" atau sejenis
+Di setiap bahasa file bernama "Produk" (base class) berisi atribut dasar yang dimiliki suatu produk
 
-Setiap bahasa juga memiliki karakteristik khusus masing-masing 
+- file bernama "Produk Elektronik" atau sejenis
+File bernama "Produk Elektronik" atau sejenis mewarisi semua atribut parentnya yaitu class Produk, dan memiliki beberapa atributnya sendiri
+
+- file bernama "Produk impor" atau sejenis
+File dengan nama ini mewarisi semua atribut dari parentnya yaitu class produk_elektronik yang kemudian dapat mengambil atribut hasil warisan parent dari parentnya. Selain itu di dalam sini juga terdapat method untuk menampilkan data dan menambah data.
+
+- file Main
+
+File ini merupakan file utama di setiap bahasa (Dalam php sebagai index.php). Ketika kode dalam file ini dijalankan, maka program akan menginisialisasi tempat penyimpanan datanya (berbeda untuk setiap bahasa), lalu memproses hardcode yang ada, selanjutnya program akan masuk ke dalam looping dan menunggu inputan user, berdasarkan inputan maka program akan mengeksekusi perintahnya, 1 untuk menampilkan data, 2 untuk menambah data, 3 untuk keluar dari program.
+
+Berikutnya akan dijelaskan sedikit mengenai perbedaan khusus pada kode di tiap bahasa
 
 ==============CPP===============
 
 - Menyimpan data produk menggunakan vector
-- Implementasi CRUD menggunakan pengkondisian while dan switch-case
 
 ![dokumentasicpp](./Dokumentasi/cpp.jpg)
 
