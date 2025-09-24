@@ -41,9 +41,9 @@ Di sini saya melakukan ekspansi terhadap class yang sebelumnya dibuat (Produk El
    - Tampilkan data (Dalam bentuk tabel)
    - Add data 
 
-============================FLOW CODE==========================
+=======================================FLOW CODE=============================================
 
-============GENERAL=============
+========================================GENERAL==============================================
 
 Dalam setiap bahasa, alur dari kode-nya kurang lebih sama
 
@@ -66,42 +66,54 @@ Berikutnya akan dijelaskan sedikit mengenai perbedaan khusus pada kode di tiap b
 
 - Menyimpan data produk menggunakan vector
 
-![dokumentasicpp](./Dokumentasi/cpp.jpg)
+![dokumentasicpp](./cpp/dokumentasi/cpp1.jpg)
 
-Ketika menjalankan kode program akan menampilkan pilihan perintah (CRUD) dan meminta inputan user. Program akan menjalankan perintah sesuai angka yang diinput oleh user. 
-Dalam dokumentasi ini saya melakukan perintah Create/Add dan menampilkan untuk menunjukkan bahwa program berhasil dijalankan.
+Dokumentasi di atas menunjukan ketika kode masuk ke dalam looping dan menerima perintah untuk menambah data, dan setelah input data baru, ia akan kembali ke loopingan menu.
 
+![dokumentasicpp](./cpp/dokumentasi/cpp2.jpg)
+
+Dokumentasi di atas menunjukkan ketika kode menerima perintah untuk menampilkan data dan data yang sebelumnya ditambahkan muncul di situ, kemudian lanjut ke perintah untuk keluar dari kode, dan program pun selesai.
 
 ==============JAVA==============
 
 - Data produk disimpan menggunakan ArrayList
-- Implementasi CRUD menggunakan Scanner dan pengkondisian while
 
-![dokumentasicpp](./Dokumentasi/java.jpg)
+![dokumentasijava](./cpp/dokumentasi/java1.jpg)
 
-Ketika menjalankan kode program akan menampilkan pilihan perintah (CRUD) dan meminta inputan user. Program akan menjalankan perintah sesuai angka yang diinput oleh user. 
-Dalam dokumentasi ini saya melakukan perintah searching dalam keadaan ArrayList masih kosong dan hasil searching tidak ditemukan yang menunjukkan bahwa program berhasil dijalankan.
+Dokumentasi di atas menunjukan ketika kode masuk ke dalam looping dan menerima perintah untuk menambah data, dan setelah input data baru, ia akan kembali ke loopingan menu.
+
+![dokumentasijava](./cpp/dokumentasi/java2.jpg)
+
+Dokumentasi di atas menunjukkan ketika kode menerima perintah untuk menampilkan data dan data yang sebelumnya ditambahkan muncul di situ, kemudian lanjut ke perintah untuk keluar dari kode, dan program pun selesai.
 
 =============PYTHON=============
 
 - Data objek produk disimpan dalam List
 - Implementasi CRUD hanya menggunakan pengkondisian While
 
-![dokumentasicpp](./Dokumentasi/py.jpg)
+![dokumentasipy](./cpp/dokumentasi/py1.jpg)
 
-Ketika menjalankan kode program akan menampilkan pilihan perintah (CRUD) dan meminta inputan user. Program akan menjalankan perintah sesuai angka yang diinput oleh user. 
-Dalam dokumentasi ini saya melakukan perintah Create/Add dan menampilkan untuk menunjukkan bahwa program berhasil dijalankan.
+Dokumentasi di atas menunjukan ketika kode masuk ke dalam looping dan menerima perintah untuk menambah data, dan setelah input data baru, ia akan kembali ke loopingan menu.
+
+![dokumentasipy](./cpp/dokumentasi/py2.jpg)
+
+Dokumentasi di atas menunjukkan ketika kode menerima perintah untuk menampilkan data dan data yang sebelumnya ditambahkan muncul di situ, kemudian lanjut ke perintah untuk keluar dari kode, dan program pun selesai.
 
 ==============PHP===============
 
 - Penyimpanan data objek produk menggunakan session_start untuk kemudian disimpan di $_SESSION['produk']
 - Input data produk menggunakan form
 - Produk terdata ditampilkan dalam tabel HTML
-- Implementasi CRUD dilakukan berdasarkan $_POST['aksi'] (action button)
 - Menambahkan sedikit styling menggunakan css agar tampilan terlihat lebih rapi
   
-![dokumentasicpp](./Dokumentasi/php.jpg)
+![dokumentasiphp](./cpp/dokumentasi/php1.jpg)
 
-Laman web menampilkan form untuk add data, dan di bawahnya terdapat tabel yang menampilkan data yang sudah ditambahkan, dan terdapat tombol untuk update data dan hapus data.
-Dalam dokumentasi ini data yang di add sebelumnya sudah masuk ke dalam tabel yang menunjukkan bahwa crud di php ini berhasil.
+Dokumentasi di atas berisi data-data hardcode yang ditampilkan dalam bentuk tabel serta terdapat atribut tambahan untuk gambar. 
 
+![dokumentasiphp](./cpp/dokumentasi/php2.jpg)
+
+Dokumentasi di atas berisi form untuk input data
+
+*Notes: Ketika input data, setalah data diinput, gambar masuk ke dalam direktori lokal, akan tetapi karena memang tidak             menggunakan database, data tidak bisa dimasukkan langsung. 
+
+=================================== CUKUP SEKIAN DAN TERIMA KASIH =============================================
