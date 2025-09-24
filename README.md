@@ -78,24 +78,23 @@ Dokumentasi di atas menunjukkan ketika kode menerima perintah untuk menampilkan 
 
 - Data produk disimpan menggunakan ArrayList
 
-![dokumentasijava](./cpp/dokumentasi/java1.jpg)
+![dokumentasijava](./java/dokumentasi/java1.jpg)
 
 Dokumentasi di atas menunjukan ketika kode masuk ke dalam looping dan menerima perintah untuk menambah data, dan setelah input data baru, ia akan kembali ke loopingan menu.
 
-![dokumentasijava](./cpp/dokumentasi/java2.jpg)
+![dokumentasijava](./java/dokumentasi/java2.jpg)
 
 Dokumentasi di atas menunjukkan ketika kode menerima perintah untuk menampilkan data dan data yang sebelumnya ditambahkan muncul di situ, kemudian lanjut ke perintah untuk keluar dari kode, dan program pun selesai.
 
 =============PYTHON=============
 
 - Data objek produk disimpan dalam List
-- Implementasi CRUD hanya menggunakan pengkondisian While
 
-![dokumentasipy](./cpp/dokumentasi/py1.jpg)
+![dokumentasipy](./py/dokumentasi/py1.jpg)
 
 Dokumentasi di atas menunjukan ketika kode masuk ke dalam looping dan menerima perintah untuk menambah data, dan setelah input data baru, ia akan kembali ke loopingan menu.
 
-![dokumentasipy](./cpp/dokumentasi/py2.jpg)
+![dokumentasipy](./py/dokumentasi/py2.jpg)
 
 Dokumentasi di atas menunjukkan ketika kode menerima perintah untuk menampilkan data dan data yang sebelumnya ditambahkan muncul di situ, kemudian lanjut ke perintah untuk keluar dari kode, dan program pun selesai.
 
@@ -106,11 +105,11 @@ Dokumentasi di atas menunjukkan ketika kode menerima perintah untuk menampilkan 
 - Produk terdata ditampilkan dalam tabel HTML
 - Menambahkan sedikit styling menggunakan css agar tampilan terlihat lebih rapi
   
-![dokumentasiphp](./cpp/dokumentasi/php1.jpg)
+![dokumentasiphp](./php/dokumentasi/php1.jpg)
 
 Dokumentasi di atas berisi data-data hardcode yang ditampilkan dalam bentuk tabel serta terdapat atribut tambahan untuk gambar. 
 
-![dokumentasiphp](./cpp/dokumentasi/php2.jpg)
+![dokumentasiphp](./php/dokumentasi/php2.jpg)
 
 Dokumentasi di atas berisi form untuk input data
 
